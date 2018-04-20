@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+
+// obj template
 import { Hero } from '../hero';
+
+// mock data
+import { HEROES } from '../mock-heroes';
 
 @Component({
   selector: 'app-heroes',
@@ -7,6 +12,7 @@ import { Hero } from '../hero';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
+  heroes = HEROES;
 
   // hero = 'Windstorm';
   hero: Hero = {
